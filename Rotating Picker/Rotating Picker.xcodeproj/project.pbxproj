@@ -13,6 +13,7 @@
 		71DB0A7D24C8F02E002D5B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0A7C24C8F02E002D5B34 /* Assets.xcassets */; };
 		71DB0A8024C8F02E002D5B34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0A7F24C8F02E002D5B34 /* Preview Assets.xcassets */; };
 		71DB0A8324C8F02E002D5B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0A8124C8F02E002D5B34 /* LaunchScreen.storyboard */; };
+		71DB0A8B24CC1EC8002D5B34 /* RotatingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0A8A24CC1EC8002D5B34 /* RotatingPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		71DB0A7F24C8F02E002D5B34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71DB0A8224C8F02E002D5B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DB0A8424C8F02F002D5B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71DB0A8A24CC1EC8002D5B34 /* RotatingPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingPicker.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				71DB0A7624C8F029002D5B34 /* AppDelegate.swift */,
 				71DB0A7824C8F02A002D5B34 /* SceneDelegate.swift */,
 				71DB0A7A24C8F02A002D5B34 /* ContentView.swift */,
+				71DB0A8A24CC1EC8002D5B34 /* RotatingPicker.swift */,
 				71DB0A7C24C8F02E002D5B34 /* Assets.xcassets */,
 				71DB0A8124C8F02E002D5B34 /* LaunchScreen.storyboard */,
 				71DB0A8424C8F02F002D5B34 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DB0A7724C8F029002D5B34 /* AppDelegate.swift in Sources */,
+				71DB0A8B24CC1EC8002D5B34 /* RotatingPicker.swift in Sources */,
 				71DB0A7924C8F02A002D5B34 /* SceneDelegate.swift in Sources */,
 				71DB0A7B24C8F02A002D5B34 /* ContentView.swift in Sources */,
 			);

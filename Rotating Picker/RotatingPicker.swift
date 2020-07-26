@@ -28,7 +28,7 @@ struct RotatingPicker: View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(Color(UIColor(red: 0.13, green: 0.27, blue: 1.00, alpha: 0.50)))
+                //.foregroundColor(Color())
                 .frame(width: diameter, height: diameter)
                 .shadow(radius: 5)
             
@@ -75,7 +75,5 @@ struct RotatingPicker: View {
                     }
                 })
         )
-        
-        
     }
 }

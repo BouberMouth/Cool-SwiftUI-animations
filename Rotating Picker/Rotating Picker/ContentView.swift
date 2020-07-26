@@ -17,7 +17,7 @@ struct ContentView: View {
         ZStack {
             Rectangle()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .foregroundColor(Color(UIColor(red: 0.5, green: 0.8, blue: 1.00, alpha: 1.00)))
+                .foregroundColor(Color(lightBlue))
                 .onTapGesture {
                     withAnimation(.spring()) {
                         self.hidePicker = true
@@ -34,6 +34,7 @@ struct ContentView: View {
                     y: hidePicker ? UIWindow().screen.bounds.height/2 + 50 : UIWindow().screen.bounds.height/2
                 )
                 .padding()
+                .foregroundColor(Color(oceanBlue))
                 .onTapGesture {
                     withAnimation(.spring()) {
                         self.hidePicker = false
@@ -41,12 +42,11 @@ struct ContentView: View {
             }
         }.edgesIgnoringSafeArea(.all)
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    
+    //MARK: - Drawing constants
+    let lightBlue = UIColor(red: 0.5, green: 0.8, blue: 1.00, alpha: 1.00)
+    let oceanBlue = UIColor(red: 0.13, green: 0.27, blue: 1.00, alpha: 0.50)
 }
 
 

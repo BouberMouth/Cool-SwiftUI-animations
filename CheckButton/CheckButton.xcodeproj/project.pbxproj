@@ -28,7 +28,7 @@
 		71DB0AA124CD892D002D5B34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71DB0AA424CD892E002D5B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DB0AA624CD892E002D5B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71DB0AAC24CD894F002D5B34 /* SimpleCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCheckButton.swift; sourceTree = SOURCE_ROOT; };
+		71DB0AAC24CD894F002D5B34 /* SimpleCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleCheckButton.swift; path = CheckButton/SimpleCheckButton.swift; sourceTree = SOURCE_ROOT; };
 		71DB0AAE24CD8BF6002D5B34 /* FillingCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillingCheckButton.swift; sourceTree = "<group>"; };
 		71DB0AB024CD8E02002D5B34 /* PieCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieCheckButton.swift; sourceTree = "<group>"; };
 		71DB0AB224CD91C7002D5B34 /* FlippingCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingCheckButton.swift; sourceTree = "<group>"; };

@@ -4,3 +4,4 @@
 <p>Inspired by <a href="https://www.instagram.com/innappscoding/">InnAppsCoding</a></p>
 
 <h2>Check buttons</h2>
+<img src="checkButtons.gif" width="250"/>

@@ -17,9 +17,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SimpleCheckButton(isChecked: $isChecked1)
-            FillingCheckButton(isChecked: $isChecked2)
-            PieCheckButton(isChecked: $isChecked3)
-            FlippingCheckButton(isChecked: $isChecked4)
+            FillingCheckButton(isChecked: $isChecked1)
+            PieCheckButton(isChecked: $isChecked1)
+            FlippingCheckButton(isChecked: $isChecked1)
         }
     }
 }

@@ -19,17 +19,15 @@ struct FlippingCheckButton: View {
     }
     
     var body: some View {
-        Button(action: {
+
+        CustomButton(action: {
             withAnimation() {
                 self.isChecked.toggle()
             }
         }, label: {
-            Circle().frame(width: diameter)
-                .makeFlippingCheckButton(isFaceUp: isChecked)
+            Circle().frame(width: self.diameter)
+                .makeFlippingCheckButton(isFaceUp: self.isChecked)
         })
-        .onAppear {
-            UIButton.appearance()
-        }
         
     }
 }
@@ -75,5 +73,27 @@ struct Flipify: AnimatableModifier {
 extension View {
     func makeFlippingCheckButton(isFaceUp: Bool) -> some View {
         self.modifier(Flipify(isFaceUp: isFaceUp))
+    }
+}
+
+struct CustomButton<Label>: View where Label: View {
+    
+    let action: () -> Void
+    let label: () -> Label
+    
+    init(action: @escaping () -> Void, label: @escaping () -> Label) {
+        self.action = action
+        self.label = label
+    }
+    
+    var body: some View {
+        makeBody()
+            .onTapGesture {
+                self.action()
+        }
+    }
+    
+    func makeBody() -> Label {
+        label()
     }
 }

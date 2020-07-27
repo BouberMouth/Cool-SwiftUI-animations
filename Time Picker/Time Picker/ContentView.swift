@@ -11,18 +11,17 @@ import SwiftUI
 struct ContentView: View {
     
     @State var seconds: Int = 0
-    @State var minutes: Int = 0
-    @State var hours: Int = 0
-    
+    var hour: Int { seconds/3600 }
+    var minutes: Int { seconds%3600/60 }
+
     var body: some View {
-        ZStack {
-            ClockView()
-            ClockHands(seconds: $seconds, intSeconds: seconds, minutes: $minutes, hours: $hours)
-        }.frame(width: 300)
-            .onTapGesture {
-                print(self.seconds)
+        VStack {
+            ZStack {
+                Circle().fill(Color.gray).frame(width: 300)
+                ClockFace().frame(width: 280)
+                ClockHands(seconds: $seconds).frame(width: 280)
+            }
         }
-            
     }
 }
 

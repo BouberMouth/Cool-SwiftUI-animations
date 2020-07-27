@@ -1,5 +1,5 @@
 //
-//  TimePicker.swift
+//  ClockFace.swift
 //  Time Picker
 //
 //  Created by Antoine on 27/07/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ClockView: View {
+struct ClockFace: View {
     
     var body: some View {
         GeometryReader { geo in

@@ -12,6 +12,10 @@
 
 <img src="gif/2.gif" width="250"/>
 
-<img src="gif/3" width="250"/>
+<img src="gif/3.gif" width="250"/>
 
 <img src="gif/4.gif" width="250"/>
+
+Roman | Arabic | Devanagari  |  Eastern Arabic
+:-------:|:--------:|:-------------:|:------------------:
+![](gif/1.gif)  |  ![](gif/2.gif)  |  ![](gif/3.gif)  |  ![](gif/4.gif)

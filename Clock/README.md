@@ -1,6 +1,5 @@
-<h1>Clock</h1>
+# CLOCK
 
-# Contents
 
 Roman | Arabic | Devanagari  |  Eastern Arabic
 :-------:|:--------:|:-------------:|:------------------:

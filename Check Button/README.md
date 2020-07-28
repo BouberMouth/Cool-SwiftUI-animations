@@ -1,4 +1,4 @@
-<h1>Check Buttons</h1>
+# CHECK BUTTONS
 
 # Contents
 

@@ -2,20 +2,6 @@
 
 # Contents
 
-- [Simple check button](#simple-check-button)
-- [Filling check button](#filling-check-button)
-- [Pie check button](#pie-check-button)
-- [Flipping check button](#flipping-check-button)
-
-
-<img src="gif/1.gif" width="250"/>
-
-<img src="gif/2.gif" width="250"/>
-
-<img src="gif/3.gif" width="250"/>
-
-<img src="gif/4.gif" width="250"/>
-
 Roman | Arabic | Devanagari  |  Eastern Arabic
 :-------:|:--------:|:-------------:|:------------------:
 ![](gif/1.gif)  |  ![](gif/2.gif)  |  ![](gif/3.gif)  |  ![](gif/4.gif)

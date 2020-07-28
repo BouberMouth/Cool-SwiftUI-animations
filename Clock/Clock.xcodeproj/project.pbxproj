@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71D60A8224D018F500711AD5 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60A8124D018F500711AD5 /* ClockView.swift */; };
-		71DB0AC324CEDE2C002D5B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0AC224CEDE2C002D5B34 /* AppDelegate.swift */; };
-		71DB0AC524CEDE2C002D5B34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0AC424CEDE2C002D5B34 /* SceneDelegate.swift */; };
-		71DB0AC724CEDE2C002D5B34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0AC624CEDE2C002D5B34 /* ContentView.swift */; };
-		71DB0AC924CEDE31002D5B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0AC824CEDE31002D5B34 /* Assets.xcassets */; };
-		71DB0ACC24CEDE31002D5B34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0ACB24CEDE31002D5B34 /* Preview Assets.xcassets */; };
-		71DB0ACF24CEDE31002D5B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DB0ACD24CEDE31002D5B34 /* LaunchScreen.storyboard */; };
-		71DB0AD724CEDE53002D5B34 /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0AD624CEDE53002D5B34 /* ClockFace.swift */; };
-		71DB0AD924CF2192002D5B34 /* ClockHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0AD824CF2192002D5B34 /* ClockHands.swift */; };
+		71D60A9624D0C39800711AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60A9524D0C39800711AD5 /* AppDelegate.swift */; };
+		71D60A9824D0C39800711AD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60A9724D0C39800711AD5 /* SceneDelegate.swift */; };
+		71D60A9C24D0C39A00711AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D60A9B24D0C39A00711AD5 /* Assets.xcassets */; };
+		71D60A9F24D0C39A00711AD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D60A9E24D0C39A00711AD5 /* Preview Assets.xcassets */; };
+		71D60AA224D0C39B00711AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D60AA024D0C39B00711AD5 /* LaunchScreen.storyboard */; };
+		71D60AAD24D0C3C200711AD5 /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60AA924D0C3C200711AD5 /* ClockFace.swift */; };
+		71D60AAE24D0C3C200711AD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60AAA24D0C3C200711AD5 /* ContentView.swift */; };
+		71D60AAF24D0C3C200711AD5 /* ClockHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60AAB24D0C3C200711AD5 /* ClockHands.swift */; };
+		71D60AB024D0C3C200711AD5 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D60AAC24D0C3C200711AD5 /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71D60A8124D018F500711AD5 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		71DB0ABF24CEDE2C002D5B34 /* Time Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71DB0AC224CEDE2C002D5B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71DB0AC424CEDE2C002D5B34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71DB0AC624CEDE2C002D5B34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		71DB0AC824CEDE31002D5B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71DB0ACB24CEDE31002D5B34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		71DB0ACE24CEDE31002D5B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		71DB0AD024CEDE31002D5B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71DB0AD624CEDE53002D5B34 /* ClockFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClockFace.swift; path = "Time Picker/ClockFace.swift"; sourceTree = SOURCE_ROOT; };
-		71DB0AD824CF2192002D5B34 /* ClockHands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHands.swift; sourceTree = "<group>"; };
+		71D60A9224D0C39800711AD5 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D60A9524D0C39800711AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71D60A9724D0C39800711AD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		71D60A9B24D0C39A00711AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D60A9E24D0C39A00711AD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71D60AA124D0C39B00711AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71D60AA324D0C39B00711AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D60AA924D0C3C200711AD5 /* ClockFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockFace.swift; sourceTree = "<group>"; };
+		71D60AAA24D0C3C200711AD5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71D60AAB24D0C3C200711AD5 /* ClockHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockHands.swift; sourceTree = "<group>"; };
+		71D60AAC24D0C3C200711AD5 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71DB0ABC24CEDE2C002D5B34 /* Frameworks */ = {
+		71D60A8F24D0C39800711AD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,43 +43,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		71DB0AB624CEDE2B002D5B34 = {
+		71D60A8924D0C39700711AD5 = {
 			isa = PBXGroup;
 			children = (
-				71DB0AC124CEDE2C002D5B34 /* Time Picker */,
-				71DB0AC024CEDE2C002D5B34 /* Products */,
+				71D60A9424D0C39800711AD5 /* Clock */,
+				71D60A9324D0C39800711AD5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		71DB0AC024CEDE2C002D5B34 /* Products */ = {
+		71D60A9324D0C39800711AD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71DB0ABF24CEDE2C002D5B34 /* Time Picker.app */,
+				71D60A9224D0C39800711AD5 /* Clock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71DB0AC124CEDE2C002D5B34 /* Time Picker */ = {
+		71D60A9424D0C39800711AD5 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				71DB0AC224CEDE2C002D5B34 /* AppDelegate.swift */,
-				71DB0AC424CEDE2C002D5B34 /* SceneDelegate.swift */,
-				71DB0AC624CEDE2C002D5B34 /* ContentView.swift */,
-				71D60A8124D018F500711AD5 /* ClockView.swift */,
-				71DB0AD824CF2192002D5B34 /* ClockHands.swift */,
-				71DB0AD624CEDE53002D5B34 /* ClockFace.swift */,
-				71DB0AC824CEDE31002D5B34 /* Assets.xcassets */,
-				71DB0ACD24CEDE31002D5B34 /* LaunchScreen.storyboard */,
-				71DB0AD024CEDE31002D5B34 /* Info.plist */,
-				71DB0ACA24CEDE31002D5B34 /* Preview Content */,
+				71D60A9524D0C39800711AD5 /* AppDelegate.swift */,
+				71D60A9724D0C39800711AD5 /* SceneDelegate.swift */,
+				71D60AA924D0C3C200711AD5 /* ClockFace.swift */,
+				71D60AAB24D0C3C200711AD5 /* ClockHands.swift */,
+				71D60AAC24D0C3C200711AD5 /* ClockView.swift */,
+				71D60AAA24D0C3C200711AD5 /* ContentView.swift */,
+				71D60A9B24D0C39A00711AD5 /* Assets.xcassets */,
+				71D60AA024D0C39B00711AD5 /* LaunchScreen.storyboard */,
+				71D60AA324D0C39B00711AD5 /* Info.plist */,
+				71D60A9D24D0C39A00711AD5 /* Preview Content */,
 			);
-			path = "Time Picker";
+			path = Clock;
 			sourceTree = "<group>";
 		};
-		71DB0ACA24CEDE31002D5B34 /* Preview Content */ = {
+		71D60A9D24D0C39A00711AD5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				71DB0ACB24CEDE31002D5B34 /* Preview Assets.xcassets */,
+				71D60A9E24D0C39A00711AD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -87,39 +87,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71DB0ABE24CEDE2C002D5B34 /* Time Picker */ = {
+		71D60A9124D0C39800711AD5 /* Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71DB0AD324CEDE31002D5B34 /* Build configuration list for PBXNativeTarget "Time Picker" */;
+			buildConfigurationList = 71D60AA624D0C39B00711AD5 /* Build configuration list for PBXNativeTarget "Clock" */;
 			buildPhases = (
-				71DB0ABB24CEDE2C002D5B34 /* Sources */,
-				71DB0ABC24CEDE2C002D5B34 /* Frameworks */,
-				71DB0ABD24CEDE2C002D5B34 /* Resources */,
+				71D60A8E24D0C39800711AD5 /* Sources */,
+				71D60A8F24D0C39800711AD5 /* Frameworks */,
+				71D60A9024D0C39800711AD5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Time Picker";
-			productName = "Time Picker";
-			productReference = 71DB0ABF24CEDE2C002D5B34 /* Time Picker.app */;
+			name = Clock;
+			productName = Clock;
+			productReference = 71D60A9224D0C39800711AD5 /* Clock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		71DB0AB724CEDE2B002D5B34 /* Project object */ = {
+		71D60A8A24D0C39700711AD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "BOUBERBOUCHE Antoine";
 				TargetAttributes = {
-					71DB0ABE24CEDE2C002D5B34 = {
+					71D60A9124D0C39800711AD5 = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
-			buildConfigurationList = 71DB0ABA24CEDE2B002D5B34 /* Build configuration list for PBXProject "Time Picker" */;
+			buildConfigurationList = 71D60A8D24D0C39700711AD5 /* Build configuration list for PBXProject "Clock" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,50 +127,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 71DB0AB624CEDE2B002D5B34;
-			productRefGroup = 71DB0AC024CEDE2C002D5B34 /* Products */;
+			mainGroup = 71D60A8924D0C39700711AD5;
+			productRefGroup = 71D60A9324D0C39800711AD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71DB0ABE24CEDE2C002D5B34 /* Time Picker */,
+				71D60A9124D0C39800711AD5 /* Clock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71DB0ABD24CEDE2C002D5B34 /* Resources */ = {
+		71D60A9024D0C39800711AD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71DB0ACF24CEDE31002D5B34 /* LaunchScreen.storyboard in Resources */,
-				71DB0ACC24CEDE31002D5B34 /* Preview Assets.xcassets in Resources */,
-				71DB0AC924CEDE31002D5B34 /* Assets.xcassets in Resources */,
+				71D60AA224D0C39B00711AD5 /* LaunchScreen.storyboard in Resources */,
+				71D60A9F24D0C39A00711AD5 /* Preview Assets.xcassets in Resources */,
+				71D60A9C24D0C39A00711AD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		71DB0ABB24CEDE2C002D5B34 /* Sources */ = {
+		71D60A8E24D0C39800711AD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71DB0AD724CEDE53002D5B34 /* ClockFace.swift in Sources */,
-				71D60A8224D018F500711AD5 /* ClockView.swift in Sources */,
-				71DB0AC324CEDE2C002D5B34 /* AppDelegate.swift in Sources */,
-				71DB0AD924CF2192002D5B34 /* ClockHands.swift in Sources */,
-				71DB0AC524CEDE2C002D5B34 /* SceneDelegate.swift in Sources */,
-				71DB0AC724CEDE2C002D5B34 /* ContentView.swift in Sources */,
+				71D60A9624D0C39800711AD5 /* AppDelegate.swift in Sources */,
+				71D60AB024D0C3C200711AD5 /* ClockView.swift in Sources */,
+				71D60AAD24D0C3C200711AD5 /* ClockFace.swift in Sources */,
+				71D60AAF24D0C3C200711AD5 /* ClockHands.swift in Sources */,
+				71D60AAE24D0C3C200711AD5 /* ContentView.swift in Sources */,
+				71D60A9824D0C39800711AD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71DB0ACD24CEDE31002D5B34 /* LaunchScreen.storyboard */ = {
+		71D60AA024D0C39B00711AD5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71DB0ACE24CEDE31002D5B34 /* Base */,
+				71D60AA124D0C39B00711AD5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		71DB0AD124CEDE31002D5B34 /* Debug */ = {
+		71D60AA424D0C39B00711AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		71DB0AD224CEDE31002D5B34 /* Release */ = {
+		71D60AA524D0C39B00711AD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,42 +292,42 @@
 			};
 			name = Release;
 		};
-		71DB0AD424CEDE31002D5B34 /* Debug */ = {
+		71D60AA724D0C39B00711AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Time Picker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = PP39C69WNU;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Time Picker/Info.plist";
+				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.commeunchinois.Time-Picker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.commeunchinois.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		71DB0AD524CEDE31002D5B34 /* Release */ = {
+		71D60AA824D0C39B00711AD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Time Picker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = PP39C69WNU;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Time Picker/Info.plist";
+				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.commeunchinois.Time-Picker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.commeunchinois.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,25 +337,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71DB0ABA24CEDE2B002D5B34 /* Build configuration list for PBXProject "Time Picker" */ = {
+		71D60A8D24D0C39700711AD5 /* Build configuration list for PBXProject "Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71DB0AD124CEDE31002D5B34 /* Debug */,
-				71DB0AD224CEDE31002D5B34 /* Release */,
+				71D60AA424D0C39B00711AD5 /* Debug */,
+				71D60AA524D0C39B00711AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71DB0AD324CEDE31002D5B34 /* Build configuration list for PBXNativeTarget "Time Picker" */ = {
+		71D60AA624D0C39B00711AD5 /* Build configuration list for PBXNativeTarget "Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71DB0AD424CEDE31002D5B34 /* Debug */,
-				71DB0AD524CEDE31002D5B34 /* Release */,
+				71D60AA724D0C39B00711AD5 /* Debug */,
+				71D60AA824D0C39B00711AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 71DB0AB724CEDE2B002D5B34 /* Project object */;
+	rootObject = 71D60A8A24D0C39700711AD5 /* Project object */;
 }

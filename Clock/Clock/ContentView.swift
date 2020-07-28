@@ -10,16 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var seconds: Int = 0
+    @State var seconds: Int = 10*3600 + 9*60 + 10
     var hours: Int { seconds / 3600 }
     var minutes: Int { (seconds % 3600) / 60 }
     
-    init() {
-        let sec = Calendar.current.component(.second, from: Date()).advanced(by: 1)
-        let h = Calendar.current.component(.hour, from: Date())
-        let min = Calendar.current.component(.minute, from: Date())
-        self._seconds = State(initialValue: (h * 3600) + (min * 60) + sec)
-    }
+//    init() {
+//        let sec = Calendar.current.component(.second, from: Date()).advanced(by: 1)
+//        let h = Calendar.current.component(.hour, from: Date())
+//        let min = Calendar.current.component(.minute, from: Date())
+//        self._seconds = State(initialValue: (h * 3600) + (min * 60) + sec)
+//    }
 
     var body: some View {
         VStack {

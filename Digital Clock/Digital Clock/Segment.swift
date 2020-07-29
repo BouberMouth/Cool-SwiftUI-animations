@@ -1,5 +1,5 @@
 //
-//  Stroke.swift
+//  Segment.swift
 //  Digital Clock
 //
 //  Created by Antoine on 29/07/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Stroke: Shape {
+struct Segment: Shape {
     
     func path(in rect: CGRect) -> Path {
         let tipLength = rect.height / 2
@@ -35,3 +35,4 @@ struct Stroke: Shape {
         return p
     }
 }
+

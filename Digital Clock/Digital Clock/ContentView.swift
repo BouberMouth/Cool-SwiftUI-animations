@@ -10,33 +10,33 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var incrementer = 6
-    @State var count = 0 {
+    @State var count = 240 {
         didSet {
+            if count > 1440 { count = 0 }
             var tmp = count
-            thousandDigit = tmp / 1000
-            tmp %= 1000
-            hundredDigit = tmp / 100
-            tmp %= 100
-            tenDigit = tmp / 10
-            tmp %= 10
-            oneDigit = tmp
+            firstDigit = tmp / 60 / 10
+            secondDigit = tmp / 60 % 10
+            tmp %= 60
+            thirdDigit = tmp / 10
+            fourthDigit = tmp % 10
         }
     }
-    @State var thousandDigit = 0
-    @State var hundredDigit = 0
-    @State var tenDigit = 0
-    @State var oneDigit = 0
+    @State var firstDigit = 0
+    @State var secondDigit = 0
+    @State var thirdDigit = 0
+    @State var fourthDigit = 0
+    
     
     var body: some View {
-        HStack {
-            DigitalNumber(digit: $thousandDigit)
-            DigitalNumber(digit: $hundredDigit)
-            DigitalNumber(digit: $tenDigit)
-            DigitalNumber(digit: $oneDigit)
-            }.padding()
+    
+        VStack {
+            DigitalClock.whiteDigitalClock(firstDigit: $firstDigit, secondDigit: $secondDigit, thirdDigit: $thirdDigit, fourthDigit: $fourthDigit)
+            DigitalClock.redDigitalClock(firstDigit: $firstDigit, secondDigit: $secondDigit, thirdDigit: $thirdDigit, fourthDigit: $fourthDigit)
+            
+        }
+        
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (_) in
                 withAnimation(.linear(duration: 0.1)) {
                     self.count += 1
                 }
@@ -46,8 +46,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+extension Color {
+    static let darkRed = Color(UIColor(displayP3Red: 0.1, green: 0, blue: 0, alpha: 1))
 }

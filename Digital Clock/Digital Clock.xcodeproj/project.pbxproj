@@ -13,8 +13,10 @@
 		71AAF92E24D1CF980097F048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71AAF92D24D1CF980097F048 /* Assets.xcassets */; };
 		71AAF93124D1CF980097F048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71AAF93024D1CF980097F048 /* Preview Assets.xcassets */; };
 		71AAF93424D1CF980097F048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AAF93224D1CF980097F048 /* LaunchScreen.storyboard */; };
-		71AAF93C24D1CFD20097F048 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF93B24D1CFD20097F048 /* Stroke.swift */; };
+		71AAF93C24D1CFD20097F048 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF93B24D1CFD20097F048 /* Segment.swift */; };
 		71AAF93E24D1D2000097F048 /* DigitalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF93D24D1D2000097F048 /* DigitalNumber.swift */; };
+		71AAF94224D208CC0097F048 /* Colon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF94124D208CC0097F048 /* Colon.swift */; };
+		71AAF94424D20C8A0097F048 /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF94324D20C8A0097F048 /* DigitalClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		71AAF93024D1CF980097F048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71AAF93324D1CF980097F048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71AAF93524D1CF980097F048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71AAF93B24D1CFD20097F048 /* Stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		71AAF93B24D1CFD20097F048 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		71AAF93D24D1D2000097F048 /* DigitalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalNumber.swift; sourceTree = "<group>"; };
+		71AAF94124D208CC0097F048 /* Colon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colon.swift; sourceTree = "<group>"; };
+		71AAF94324D20C8A0097F048 /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 				71AAF92924D1CF930097F048 /* SceneDelegate.swift */,
 				71AAF92B24D1CF930097F048 /* ContentView.swift */,
 				71AAF93D24D1D2000097F048 /* DigitalNumber.swift */,
-				71AAF93B24D1CFD20097F048 /* Stroke.swift */,
+				71AAF94324D20C8A0097F048 /* DigitalClock.swift */,
+				71AAF93B24D1CFD20097F048 /* Segment.swift */,
+				71AAF94124D208CC0097F048 /* Colon.swift */,
 				71AAF92D24D1CF980097F048 /* Assets.xcassets */,
 				71AAF93224D1CF980097F048 /* LaunchScreen.storyboard */,
 				71AAF93524D1CF980097F048 /* Info.plist */,
@@ -155,8 +161,10 @@
 				71AAF93E24D1D2000097F048 /* DigitalNumber.swift in Sources */,
 				71AAF92824D1CF930097F048 /* AppDelegate.swift in Sources */,
 				71AAF92A24D1CF930097F048 /* SceneDelegate.swift in Sources */,
+				71AAF94224D208CC0097F048 /* Colon.swift in Sources */,
 				71AAF92C24D1CF930097F048 /* ContentView.swift in Sources */,
-				71AAF93C24D1CFD20097F048 /* Stroke.swift in Sources */,
+				71AAF93C24D1CFD20097F048 /* Segment.swift in Sources */,
+				71AAF94424D20C8A0097F048 /* DigitalClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

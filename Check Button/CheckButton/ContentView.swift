@@ -16,12 +16,18 @@ struct ContentView: View {
     @State var isChecked5 = false
     
     var body: some View {
-        VStack {
-            SimpleCheckButton(isChecked: $isChecked1).padding()
-            FillingCheckButton(isChecked: $isChecked1).padding()
-            PieCheckButton(isChecked: $isChecked1).padding()
-            FlippingCheckButton(isChecked: $isChecked1).padding()
-            AssembledCheckButton(isChecked: $isChecked1).padding()
+        HStack {
+            VStack(alignment: .center) {
+                SimpleCheckButton(isChecked: $isChecked1).frame(minWidth: 100, maxWidth: 120).padding()
+                FillingCheckButton(isChecked: $isChecked1).frame(minWidth: 100, maxWidth: 120).padding()
+                PieCheckButton(isChecked: $isChecked1).frame(minWidth: 100, maxWidth: 120).padding()
+                FlippingCheckButton(isChecked: $isChecked1).frame(minWidth: 100, maxWidth: 120).padding()
+                AssembledCheckButton(isChecked: $isChecked1).frame(minWidth: 100, maxWidth: 120).padding()
+            }.onTapGesture {
+                withAnimation(.easeInOut(duration: 0.7)) {
+                    self.isChecked1.toggle()
+                }
+            }
         }
     }
 }

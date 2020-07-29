@@ -29,13 +29,12 @@ struct AssembledCheckButton: View {
                         height: self.heigthForCapsuleIn(geo.size))
                     .rotationEffect(self.angleForCapsule2)
                     .offset(self.offsetForCapsule2In(geo.size))
-            }
-            .onTapGesture {
-                    withAnimation() {
-                        self.isChecked.toggle()
-                    }
-            }
+            }.frame(width: self.widthForCircleIn(geo.size))
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
     }
     
     func widthForCapsule1In(_ size: CGSize) -> CGFloat {

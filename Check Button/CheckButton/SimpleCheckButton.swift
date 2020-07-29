@@ -25,11 +25,6 @@ struct SimpleCheckButton: View {
                     Circle().stroke(Color.gray, lineWidth: self.lineWidthIn(geo.size))
                 }
             }.frame(width: self.widthForCircleIn(geo.size))
-            .onTapGesture {
-                withAnimation() {
-                    self.isChecked.toggle()
-                }
-            }
         }
     }
     

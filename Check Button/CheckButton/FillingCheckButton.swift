@@ -21,11 +21,6 @@ struct FillingCheckButton: View {
                 Circle().fill(Color(.systemBackground))
                     .frame(width: self.widthForInnerCircleIn(geo.size))
             }.frame(width: self.widthForCircleIn(geo.size))
-            .onTapGesture {
-                withAnimation() {
-                    self.isChecked.toggle()
-                }
-            }
         }
     }
     

@@ -10,22 +10,13 @@ import SwiftUI
 
 struct FlippingCheckButton: View {
     @Binding var isChecked: Bool
-
-    init(isChecked: Binding<Bool>) {
-        self._isChecked = isChecked
-    }
     
     var body: some View {
         GeometryReader { geo in
-            CustomButton(action: {
-                withAnimation() {
-                    self.isChecked.toggle()
-                }
-            }, label: {
-                Circle().frame(width: self.widthForCircleIn(geo.size))
-                    .makeFlippingCheckButton(isFaceUp: self.isChecked)
-                    .font(.system(size: self.fontSizeIn(geo.size)))
-            })
+            Circle().frame(width: self.widthForCircleIn(geo.size))
+                .makeFlippingCheckButton(isFaceUp: self.isChecked)
+                .font(.system(size: self.fontSizeIn(geo.size)))
+                .frame(width: self.widthForCircleIn(geo.size))
         }
     }
     
@@ -70,7 +61,7 @@ struct Flipify: AnimatableModifier {
                     .foregroundColor(.white)
             }.opacity(isFaceUp ? 0 : 1)
         }
-        .rotation3DEffect(Angle(degrees: rotation), axis: (0, 1, 0))
+        .rotation3DEffect(Angle(degrees: rotation), axis: (1, 0, 0))
     }
 }
 

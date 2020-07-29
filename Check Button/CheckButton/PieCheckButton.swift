@@ -24,11 +24,6 @@ struct PieCheckButton: View {
                 ).fill(Color.red)
                 
             }.frame(width: self.widthForCircleIn(geo.size))
-                .onTapGesture {
-                    withAnimation() {
-                        self.isChecked.toggle()
-                    }
-            }
         }
     }
     

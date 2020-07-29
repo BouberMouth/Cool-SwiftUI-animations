@@ -19,3 +19,6 @@
 # Flipping check button
 <img src="gif/flippingCheckButton.gif" width="250"/>
 <p>For this button, I had to implement a custom button since I did not find any way to disable the highlight on selecting a regular button.</p>
+
+# Assembled check button
+<img src="gif/assembledCheckButton.gif" width="250"/>

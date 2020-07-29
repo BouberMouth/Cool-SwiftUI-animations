@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71AAF8F624D198D30097F048 /* AssembledCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF8F524D198D30097F048 /* AssembledCheckButton.swift */; };
 		71DB0A9924CD8928002D5B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0A9824CD8928002D5B34 /* AppDelegate.swift */; };
 		71DB0A9B24CD8928002D5B34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0A9A24CD8928002D5B34 /* SceneDelegate.swift */; };
 		71DB0A9D24CD8929002D5B34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB0A9C24CD8929002D5B34 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71AAF8F524D198D30097F048 /* AssembledCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembledCheckButton.swift; sourceTree = "<group>"; };
 		71DB0A9524CD8928002D5B34 /* CheckButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DB0A9824CD8928002D5B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71DB0A9A24CD8928002D5B34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				71DB0A9A24CD8928002D5B34 /* SceneDelegate.swift */,
 				71DB0A9C24CD8929002D5B34 /* ContentView.swift */,
 				71DB0AAC24CD894F002D5B34 /* SimpleCheckButton.swift */,
+				71AAF8F524D198D30097F048 /* AssembledCheckButton.swift */,
 				71DB0AAE24CD8BF6002D5B34 /* FillingCheckButton.swift */,
 				71DB0AB024CD8E02002D5B34 /* PieCheckButton.swift */,
 				71DB0AB224CD91C7002D5B34 /* FlippingCheckButton.swift */,
@@ -165,6 +168,7 @@
 				71DB0AAD24CD894F002D5B34 /* SimpleCheckButton.swift in Sources */,
 				71DB0AB324CD91C7002D5B34 /* FlippingCheckButton.swift in Sources */,
 				71DB0A9D24CD8929002D5B34 /* ContentView.swift in Sources */,
+				71AAF8F624D198D30097F048 /* AssembledCheckButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

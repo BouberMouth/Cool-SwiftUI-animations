@@ -11,27 +11,38 @@ import SwiftUI
 struct SimpleCheckButton: View {
     @Binding var isChecked: Bool
     
-    let diameter: CGFloat = 50.0
-    let fontSize: CGFloat = 30.0
-    
     var body: some View {
-        ZStack {
-            if isChecked {
-                Circle().fill(Color.green)
-                Circle().stroke(Color.green, lineWidth: 2.5)
-                Image(systemName: "checkmark")
-                    .font(.system(size: fontSize))
-                    .foregroundColor(.white)
-            } else {
-                Circle().fill(Color(.systemBackground))
-                Circle().stroke(Color.gray, lineWidth: 2.5)
-            }
-        }.frame(width: diameter)
-        .onTapGesture {
-            withAnimation() {
-                self.isChecked.toggle()
+        GeometryReader { geo in
+            ZStack {
+                if self.isChecked {
+                    Circle().fill(Color.green)
+                    Circle().stroke(Color.green, lineWidth: self.lineWidthIn(geo.size))
+                    Image(systemName: "checkmark")
+                        .font(.system(size: self.fontSizeIn(geo.size)))
+                        .foregroundColor(.white)
+                } else {
+                    Circle().fill(Color(.systemBackground))
+                    Circle().stroke(Color.gray, lineWidth: self.lineWidthIn(geo.size))
+                }
+            }.frame(width: self.widthForCircleIn(geo.size))
+            .onTapGesture {
+                withAnimation() {
+                    self.isChecked.toggle()
+                }
             }
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
+    }
+    
+    func fontSizeIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height) * 0.6
+    }
+    
+    func lineWidthIn(_ size: CGSize) -> CGFloat {
+        widthForCircleIn(size) * 0.05
     }
 }
 

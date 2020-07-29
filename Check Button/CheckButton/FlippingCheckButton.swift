@@ -10,25 +10,31 @@ import SwiftUI
 
 struct FlippingCheckButton: View {
     @Binding var isChecked: Bool
-    
-    let diameter: CGFloat = 50.0
-    let fontSize: CGFloat = 30.0
 
     init(isChecked: Binding<Bool>) {
         self._isChecked = isChecked
     }
     
     var body: some View {
-
-        CustomButton(action: {
-            withAnimation() {
-                self.isChecked.toggle()
-            }
-        }, label: {
-            Circle().frame(width: self.diameter)
-                .makeFlippingCheckButton(isFaceUp: self.isChecked)
-        })
-        
+        GeometryReader { geo in
+            CustomButton(action: {
+                withAnimation() {
+                    self.isChecked.toggle()
+                }
+            }, label: {
+                Circle().frame(width: self.widthForCircleIn(geo.size))
+                    .makeFlippingCheckButton(isFaceUp: self.isChecked)
+                    .font(.system(size: self.fontSizeIn(geo.size)))
+            })
+        }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
+    }
+    
+    func fontSizeIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height) * 0.6
     }
 }
 
@@ -55,17 +61,15 @@ struct Flipify: AnimatableModifier {
             Group {
                 Circle().fill(Color.green)
                 Image(systemName: "checkmark")
-                    .font(.system(size: 30))
                     .foregroundColor(.white)
             }.opacity(isFaceUp ? 1 : 0)
             
             Group {
                 Circle().fill(Color.red)
                 Image(systemName: "xmark")
-                    .font(.system(size: 30))
                     .foregroundColor(.white)
             }.opacity(isFaceUp ? 0 : 1)
-        }.frame(width: 50)
+        }
         .rotation3DEffect(Angle(degrees: rotation), axis: (0, 1, 0))
     }
 }

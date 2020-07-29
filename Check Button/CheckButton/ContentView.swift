@@ -13,13 +13,15 @@ struct ContentView: View {
     @State var isChecked2 = false
     @State var isChecked3 = false
     @State var isChecked4 = false
+    @State var isChecked5 = false
     
     var body: some View {
         VStack {
-            SimpleCheckButton(isChecked: $isChecked1)
-            FillingCheckButton(isChecked: $isChecked1)
-            PieCheckButton(isChecked: $isChecked1)
-            FlippingCheckButton(isChecked: $isChecked1)
+            SimpleCheckButton(isChecked: $isChecked1).padding()
+            FillingCheckButton(isChecked: $isChecked1).padding()
+            PieCheckButton(isChecked: $isChecked1).padding()
+            FlippingCheckButton(isChecked: $isChecked1).padding()
+            AssembledCheckButton(isChecked: $isChecked1).padding()
         }
     }
 }

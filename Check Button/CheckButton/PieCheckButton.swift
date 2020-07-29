@@ -11,26 +11,33 @@ import SwiftUI
 struct PieCheckButton: View {
     @Binding var isChecked: Bool
     
-    let diameter: CGFloat = 50.0
-    let fontSize: CGFloat = 30.0
-    
     var body: some View {
-        ZStack {
-            Circle().fill(Color.green)
-            Image(systemName: "checkmark")
-                .font(.system(size: fontSize))
-                .foregroundColor(.white)
-            Pie(
-                startAngle: Angle(degrees: -90),
-                endAngle: Angle(degrees: isChecked ? -90 : 270)
-            ).fill(Color.red)
-            
-        }.frame(width: diameter)
-            .onTapGesture {
-                withAnimation() {
-                    self.isChecked.toggle()
-                }
+        GeometryReader { geo in
+            ZStack {
+                Circle().fill(Color.green)
+                Image(systemName: "checkmark")
+                    .font(.system(size: self.fontSizeIn(geo.size)))
+                    .foregroundColor(.white)
+                Pie(
+                    startAngle: Angle(degrees: -90),
+                    endAngle: Angle(degrees: self.isChecked ? -90 : 270)
+                ).fill(Color.red)
+                
+            }.frame(width: self.widthForCircleIn(geo.size))
+                .onTapGesture {
+                    withAnimation() {
+                        self.isChecked.toggle()
+                    }
+            }
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
+    }
+    
+    func fontSizeIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height) * 0.6
     }
 }
 

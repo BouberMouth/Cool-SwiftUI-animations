@@ -11,23 +11,34 @@ import SwiftUI
 struct FillingCheckButton: View {
     @Binding var isChecked: Bool
     
-    let diameter: CGFloat = 50.0
-    let fontSize: CGFloat = 30.0
-    
     var body: some View {
-        ZStack {
-            Circle().fill(isChecked ? Color.green : Color.red)
-            Image(systemName: "checkmark")
-                .font(.system(size: fontSize))
-                .foregroundColor(.white)
-            Circle().fill(Color(.systemBackground))
-                .frame(width: self.isChecked ? 0 : diameter * 0.9)
-        }.frame(width: diameter)
-        .onTapGesture {
-            withAnimation() {
-                self.isChecked.toggle()
+        GeometryReader { geo in
+            ZStack {
+                Circle().fill(self.isChecked ? Color.green : Color.red)
+                Image(systemName: "checkmark")
+                    .font(.system(size: self.fontSizeIn(geo.size)))
+                    .foregroundColor(.white)
+                Circle().fill(Color(.systemBackground))
+                    .frame(width: self.widthForInnerCircleIn(geo.size))
+            }.frame(width: self.widthForCircleIn(geo.size))
+            .onTapGesture {
+                withAnimation() {
+                    self.isChecked.toggle()
+                }
             }
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
+    }
+    
+    func fontSizeIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height) * 0.6
+    }
+    
+    func widthForInnerCircleIn(_ size: CGSize) -> CGFloat {
+        isChecked ? 0 : widthForCircleIn(size) * 0.9
     }
 }
 

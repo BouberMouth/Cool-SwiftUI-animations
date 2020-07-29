@@ -6,6 +6,7 @@
 - [Filling check button](#filling-check-button)
 - [Pie check button](#pie-check-button)
 - [Flipping check button](#flipping-check-button)
+- [Assembled check button](#assembled-check-button)
 
 # Simple check button
 <img src="gif/simpleCheckButton.gif" width="250"/>

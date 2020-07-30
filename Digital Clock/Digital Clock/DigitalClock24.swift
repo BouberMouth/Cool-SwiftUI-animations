@@ -1,5 +1,5 @@
 //
-//  DigitalClock.swift
+//  DigitalClock24.swift
 //  Digital Clock
 //
 //  Created by Antoine on 29/07/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct DigitalClock: View {
+struct DigitalClock24: View {
     
     @Binding var firstDigit: Int
     @Binding var secondDigit: Int
@@ -32,18 +32,18 @@ struct DigitalClock: View {
                 DigitalNumber(digit: self.$fourthDigit, offColor: self.offColor, onColor: self.onColor)
                     .frame(width: geo.size.width * 0.88  / 4.5)
             }
-            
+            .offset(x: geo.size.width * 0.03)
         }
     }
 }
 
-extension DigitalClock {
-    static func redDigitalClock(firstDigit: Binding<Int>, secondDigit: Binding<Int>, thirdDigit: Binding<Int>, fourthDigit: Binding<Int>) -> DigitalClock {
-        DigitalClock(firstDigit: firstDigit, secondDigit: secondDigit, thirdDigit: thirdDigit, fourthDigit: fourthDigit, offColor: .darkRed, onColor: .red)
+extension DigitalClock24 {
+    static func redDigitalClock24(firstDigit: Binding<Int>, secondDigit: Binding<Int>, thirdDigit: Binding<Int>, fourthDigit: Binding<Int>) -> DigitalClock24 {
+        DigitalClock24(firstDigit: firstDigit, secondDigit: secondDigit, thirdDigit: thirdDigit, fourthDigit: fourthDigit, offColor: .darkRed, onColor: .red)
     }
     
-    static func whiteDigitalClock(firstDigit: Binding<Int>, secondDigit: Binding<Int>, thirdDigit: Binding<Int>, fourthDigit: Binding<Int>) -> DigitalClock {
-        DigitalClock(firstDigit: firstDigit, secondDigit: secondDigit, thirdDigit: thirdDigit, fourthDigit: fourthDigit)
+    static func whiteDigitalClock24(firstDigit: Binding<Int>, secondDigit: Binding<Int>, thirdDigit: Binding<Int>, fourthDigit: Binding<Int>) -> DigitalClock24 {
+        DigitalClock24(firstDigit: firstDigit, secondDigit: secondDigit, thirdDigit: thirdDigit, fourthDigit: fourthDigit)
     }
     
 }

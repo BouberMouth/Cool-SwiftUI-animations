@@ -26,13 +26,13 @@ struct ContentView: View {
             ZStack {
                 VStack {
                     ClockView(seconds: $seconds, backgroundColor: .white, borderColor: .black, digitStyle: .roman)
-                        .foregroundColor(.black)
+                        .foregroundColor(.black).frame(minWidth: 100, maxWidth: 180)
                     ClockView(seconds: $seconds, backgroundColor: .black, borderColor: .black, digitStyle: .arabic)
-                        .foregroundColor(.white)
+                        .foregroundColor(.white).frame(minWidth: 100, maxWidth: 180)
                     ClockView(seconds: $seconds, backgroundColor: .seaBlue, borderColor: .black, digitStyle: .devanagari)
-                        .foregroundColor(.lightBlue)
+                        .foregroundColor(.lightBlue).frame(minWidth: 100, maxWidth: 180)
                     ClockView(seconds: $seconds, backgroundColor: .orange, borderColor: .orange, digitStyle: .easternArabic)
-                        .foregroundColor(.white)
+                        .foregroundColor(.white).frame(minWidth: 100, maxWidth: 180)
                 }.padding()
             }
         }

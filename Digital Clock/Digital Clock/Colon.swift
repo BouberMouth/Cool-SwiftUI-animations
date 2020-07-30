@@ -19,13 +19,15 @@ struct Colon: View {
     
     var body: some View {
         GeometryReader { geo in
-            ZStack {
-                Circle().fill(self.isOn ? self.onColor : self.offColor).frame(width: geo.size.width/3)
+            ZStack(alignment: .center) {
+                Circle().fill(self.isOn ? self.onColor : self.offColor)
+                    .frame(width: geo.size.width/3, height: geo.size.width/3)
                     .offset(y: geo.size.width)
-                Circle().fill(self.isOn ? self.onColor : self.offColor).frame(width: geo.size.width/3)
+                Circle().fill(self.isOn ? self.onColor : self.offColor)
+                    .frame(width: geo.size.width/3, height: geo.size.width/3)
                     .offset(y: -geo.size.width)
             }
-            .frame(width: geo.size.width, height: geo.size.width * 4)
+            .offset(x: geo.size.width / 4, y: geo.size.height / 2)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
                     withAnimation() {

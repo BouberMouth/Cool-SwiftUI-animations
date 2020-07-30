@@ -26,8 +26,12 @@ struct ClockHands: View {
                 self.hourHandBodyIn(geo.size)
                 self.secondHandBodyIn(geo.size)
                 Circle().fill().frame(width: 10)
-            }
+            }.frame(width: self.widthForCircleIn(geo.size))
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
     }
     
     //MARK: - SECOND HAND

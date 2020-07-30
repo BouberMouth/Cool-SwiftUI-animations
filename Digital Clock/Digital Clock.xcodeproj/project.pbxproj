@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7163880C24D3071C00A551C8 /* DigitalClock12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163880B24D3071C00A551C8 /* DigitalClock12.swift */; };
+		7163880E24D307B900A551C8 /* TimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163880D24D307B900A551C8 /* TimeIndicator.swift */; };
 		71AAF92824D1CF930097F048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF92724D1CF930097F048 /* AppDelegate.swift */; };
 		71AAF92A24D1CF930097F048 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF92924D1CF930097F048 /* SceneDelegate.swift */; };
 		71AAF92C24D1CF930097F048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF92B24D1CF930097F048 /* ContentView.swift */; };
@@ -16,10 +18,12 @@
 		71AAF93C24D1CFD20097F048 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF93B24D1CFD20097F048 /* Segment.swift */; };
 		71AAF93E24D1D2000097F048 /* DigitalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF93D24D1D2000097F048 /* DigitalNumber.swift */; };
 		71AAF94224D208CC0097F048 /* Colon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF94124D208CC0097F048 /* Colon.swift */; };
-		71AAF94424D20C8A0097F048 /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF94324D20C8A0097F048 /* DigitalClock.swift */; };
+		71AAF94424D20C8A0097F048 /* DigitalClock24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAF94324D20C8A0097F048 /* DigitalClock24.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7163880B24D3071C00A551C8 /* DigitalClock12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock12.swift; sourceTree = "<group>"; };
+		7163880D24D307B900A551C8 /* TimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicator.swift; sourceTree = "<group>"; };
 		71AAF92424D1CF930097F048 /* Digital Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AAF92724D1CF930097F048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71AAF92924D1CF930097F048 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		71AAF93B24D1CFD20097F048 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		71AAF93D24D1D2000097F048 /* DigitalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalNumber.swift; sourceTree = "<group>"; };
 		71AAF94124D208CC0097F048 /* Colon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colon.swift; sourceTree = "<group>"; };
-		71AAF94324D20C8A0097F048 /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
+		71AAF94324D20C8A0097F048 /* DigitalClock24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock24.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +72,11 @@
 				71AAF92924D1CF930097F048 /* SceneDelegate.swift */,
 				71AAF92B24D1CF930097F048 /* ContentView.swift */,
 				71AAF93D24D1D2000097F048 /* DigitalNumber.swift */,
-				71AAF94324D20C8A0097F048 /* DigitalClock.swift */,
+				71AAF94324D20C8A0097F048 /* DigitalClock24.swift */,
+				7163880B24D3071C00A551C8 /* DigitalClock12.swift */,
 				71AAF93B24D1CFD20097F048 /* Segment.swift */,
 				71AAF94124D208CC0097F048 /* Colon.swift */,
+				7163880D24D307B900A551C8 /* TimeIndicator.swift */,
 				71AAF92D24D1CF980097F048 /* Assets.xcassets */,
 				71AAF93224D1CF980097F048 /* LaunchScreen.storyboard */,
 				71AAF93524D1CF980097F048 /* Info.plist */,
@@ -164,7 +170,9 @@
 				71AAF94224D208CC0097F048 /* Colon.swift in Sources */,
 				71AAF92C24D1CF930097F048 /* ContentView.swift in Sources */,
 				71AAF93C24D1CFD20097F048 /* Segment.swift in Sources */,
-				71AAF94424D20C8A0097F048 /* DigitalClock.swift in Sources */,
+				71AAF94424D20C8A0097F048 /* DigitalClock24.swift in Sources */,
+				7163880E24D307B900A551C8 /* TimeIndicator.swift in Sources */,
+				7163880C24D3071C00A551C8 /* DigitalClock12.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

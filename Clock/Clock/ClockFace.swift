@@ -33,8 +33,12 @@ struct ClockFace: View {
                         .offset(self.offsetForDigit(i, in: geo.size))
                 }
                 
-            }
+            }.frame(width: self.widthForCircleIn(geo.size))
         }
+    }
+    
+    func widthForCircleIn(_ size: CGSize) -> CGFloat {
+        min(size.width, size.height)
     }
     
     func fontFor(_ size: CGSize) -> CGFloat {

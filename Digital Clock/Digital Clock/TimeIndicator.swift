@@ -28,13 +28,6 @@ struct TimeIndicator: View {
             }
             .font(.system(size: self.fontSizeIn(geo.size), weight: .bold, design: .rounded))
             .offset(x: 0, y: geo.size.height / 2)
-            .onTapGesture {
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                    withAnimation() {
-                        self.isAM.toggle()
-                    }
-                }
-            }
         }
     }
     

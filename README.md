@@ -4,6 +4,9 @@
 # Clock
 <img src="gif/clock.gif" width="250"/>
 
+# Digital clock
+<img src="gif/digitalClock.gif" width="250"/>
+
 # Rotating picker
 <img src="gif/rotatingPicker.gif" width="250"/>
 <p>Inspired by <a href="https://www.instagram.com/innappscoding/">InnAppsCoding</a></p>

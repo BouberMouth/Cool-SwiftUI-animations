@@ -16,9 +16,9 @@ struct ContentView: View {
     @State var thirdDigit1 = 0
     @State var fourthDigit1 = 0
     
-    @State var seconds1 = 690 {
+    @State var seconds1 = 1430 {
         didSet {
-            if seconds1 > 1440 { seconds1 = 0 }
+            if seconds1 == 1440 { seconds1 = 0 }
             var tmp = seconds1
             firstDigit1 = tmp / 60 / 10
             secondDigit1 = tmp / 60 % 10
@@ -34,12 +34,12 @@ struct ContentView: View {
     @State var secondDigit2 = 0
     @State var thirdDigit2 = 0
     @State var fourthDigit2 = 0
-    @State var isAM: Bool = true
+    @State var isAM: Bool = false
     
-    @State var seconds2 = 690 {
+    @State var seconds2 = 1430 {
         didSet {
             if seconds2 == 720 { isAM = false }
-            if seconds2 > 1440 { seconds2 = 0 }
+            if seconds2 == 1440 { seconds2 = 0; isAM = true }
             var tmp = seconds2
             firstDigit2 = tmp / 60 % 12 / 10
             secondDigit2 = tmp / 60 % 12 % 10
@@ -61,6 +61,7 @@ struct ContentView: View {
             ZStack {
                 Rectangle().fill(Color.white)
                 DigitalClock24.whiteDigitalClock24(firstDigit: $firstDigit1, secondDigit: $secondDigit1, thirdDigit: $thirdDigit1, fourthDigit: $fourthDigit1).frame(width: 280)
+                    .offset(x: -10)
             }
             ZStack {
                 Rectangle().fill(Color.black)

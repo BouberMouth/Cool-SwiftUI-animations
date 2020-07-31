@@ -11,6 +11,7 @@ import SwiftUI
 struct RotatingPicker: View {
     @Binding var isHidden: Bool
     @Binding var selection: Int
+    @Binding var hasChangedSelection: Bool
     let icons: [String]
     
     let diameter: CGFloat = 300
@@ -18,17 +19,17 @@ struct RotatingPicker: View {
     let rotationFactor: Double
     @State var rotation: Double = 0
     
-    init(icons: [String], selection: Binding<Int>, isHidden: Binding<Bool>) {
+    init(icons: [String], selection: Binding<Int>, isHidden: Binding<Bool>, hasChangedSelection: Binding<Bool>) {
         self.icons = icons
         self.rotationFactor = 360 / Double(icons.count)
         self._selection = selection
         self._isHidden = isHidden
+        self._hasChangedSelection = hasChangedSelection
     }
     
     var body: some View {
         ZStack {
             Circle()
-                //.foregroundColor(Color())
                 .frame(width: diameter, height: diameter)
                 .shadow(radius: 5)
             
@@ -40,7 +41,17 @@ struct RotatingPicker: View {
             
             ForEach(0..<icons.count) { i in
                 Button(action: {
-                    self.selection = i
+                    withAnimation(.linear(duration: 0.3)) {
+                        self.hasChangedSelection = true
+                    }
+                    Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) {_ in 
+                        withAnimation(Animation.linear(duration: 0.3)) {
+                            self.selection = i
+                            self.hasChangedSelection = false
+                        }
+                    }
+                    
+                    
                 }, label: {
                     ZStack {
                         Circle()

@@ -14,6 +14,8 @@
 		71D06C6A24D573250046AC50 /* BouncingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6924D573250046AC50 /* BouncingDots.swift */; };
 		71D06C6C24D590930046AC50 /* PulsingCapsules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6B24D590930046AC50 /* PulsingCapsules.swift */; };
 		71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */; };
+		71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */; };
+		71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C7124D61EC40046AC50 /* DottedCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		71D06C6924D573250046AC50 /* BouncingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingDots.swift; sourceTree = "<group>"; };
 		71D06C6B24D590930046AC50 /* PulsingCapsules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingCapsules.swift; sourceTree = "<group>"; };
 		71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlalomingDot.swift; sourceTree = "<group>"; };
+		71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSActivityIndicator.swift; sourceTree = "<group>"; };
+		71D06C7124D61EC40046AC50 /* DottedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			children = (
 				71D06C5A24D572F60046AC50 /* Activity_IndicatorApp.swift */,
 				71D06C5C24D572F60046AC50 /* ContentView.swift */,
+				71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */,
+				71D06C7124D61EC40046AC50 /* DottedCircle.swift */,
 				71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */,
 				71D06C6924D573250046AC50 /* BouncingDots.swift */,
 				71D06C6B24D590930046AC50 /* PulsingCapsules.swift */,
@@ -148,9 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D06C5D24D572F60046AC50 /* ContentView.swift in Sources */,
+				71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */,
 				71D06C5B24D572F60046AC50 /* Activity_IndicatorApp.swift in Sources */,
 				71D06C6C24D590930046AC50 /* PulsingCapsules.swift in Sources */,
 				71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */,
+				71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */,
 				71D06C6A24D573250046AC50 /* BouncingDots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

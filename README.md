@@ -9,4 +9,4 @@
 
 # Rotating picker
 <img src="gif/rotatingPicker.gif" width="250"/>
-<p>Inspired by <a href="https://www.instagram.com/innappscoding/">InnAppsCoding</a></p>
+<p>Inspired by <a href="https://www.instagram.com/innappscoding/">InnAppsCoding</a>'s <a href="https://www.instagram.com/p/CAm_qd1ALbE/?igshid=hhqkv5q8yplk">rotating picker.</p>

@@ -32,7 +32,7 @@ struct BouncingDots: View {
     }
     
     func widthForDotIn(_ size: CGSize) -> CGFloat {
-        min(size.width, size.height) * 0.3
+        min(size.width * 0.3, size.height / 1.5)
     }
     
     func spacingBetweenDotsIn(_ size: CGSize) -> CGFloat {
@@ -40,9 +40,8 @@ struct BouncingDots: View {
     }
     
     func offsetIn(_ size: CGSize) -> CGSize {
-        let halfDotsWidth = min(size.width, size.height) / 2
-        return CGSize(width: (size.width / 2) - halfDotsWidth,
-               height: (size.height / 2) - (widthForDotIn(size) / 2))
+        CGSize(width: (size.width / 2) - (1.5 * widthForDotIn(size) + spacingBetweenDotsIn(size)),
+               height: (size.height / 2) - (widthForDotIn(size) / 4))
     }
 }
 

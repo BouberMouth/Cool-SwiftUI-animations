@@ -26,11 +26,11 @@ struct SlalomingDot: View {
     }
     
     func widthForDotIn(_ size: CGSize) -> CGFloat {
-        size.width/10//min(size.width, size.height) / 10
+        min(size.width / 10, size.height / 4)
     }
     
     func spacingBetweenDotsIn(_ size: CGSize) -> CGFloat {
-        min(size.width, size.height) * 0.05
+        widthForDotIn(size) / 2
     }
     
     func offsetIn(_ size: CGSize) -> CGSize {
@@ -63,7 +63,7 @@ struct Dot: View {
     }
     
     func widthForDotIn(_ size: CGSize) -> CGFloat {
-        size.width/10//min(size.width, size.height) / 10
+        min(size.width / 10, size.height / 4)
     }
 }
 

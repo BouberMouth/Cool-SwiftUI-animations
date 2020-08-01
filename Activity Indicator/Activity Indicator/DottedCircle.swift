@@ -48,3 +48,5 @@ struct DottedCircle: View {
         scaleRatios[(index + indexOfHighlight) % 8]
     }
 }
+
+

@@ -58,14 +58,16 @@ struct ContentView: View {
     var body: some View {
     
         VStack(spacing: 0) {
-            ZStack {
-                Rectangle().fill(Color.white)
-                DigitalClock24.whiteDigitalClock24(firstDigit: $firstDigit1, secondDigit: $secondDigit1, thirdDigit: $thirdDigit1, fourthDigit: $fourthDigit1).frame(width: 280)
-                    .offset(x: -10)
-            }
-            ZStack {
+            ZStack(alignment: .bottom) {
                 Rectangle().fill(Color.black)
-                DigitalClock12.redDigitalClock12(isAM: $isAM, firstDigit: $firstDigit2, secondDigit: $secondDigit2, thirdDigit: $thirdDigit2, fourthDigit: $fourthDigit2).frame(width: 300)
+                DigitalClock24.redDigitalClock24(firstDigit: $firstDigit1, secondDigit: $secondDigit1, thirdDigit: $thirdDigit1, fourthDigit: $fourthDigit1).frame(width: 272, height: 130)
+                    .offset(x: -13)
+                    .padding(.bottom, 20)
+            }
+            ZStack(alignment: .top) {
+                Rectangle().fill(Color.black)
+                DigitalClock12.redDigitalClock12(isAM: $isAM, firstDigit: $firstDigit2, secondDigit: $secondDigit2, thirdDigit: $thirdDigit2, fourthDigit: $fourthDigit2).frame(width: 300, height: 130)
+                    .padding(.bottom, 20)
             }
         }.edgesIgnoringSafeArea([.top, .bottom])
         .onAppear {

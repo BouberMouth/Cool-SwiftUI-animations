@@ -131,14 +131,16 @@ extension SlalomingDot {
         GeometryReader { geo in
             ZStack {
                 Capsule().foregroundColor(.black)
-                    .frame(width: geo.size.width,
-                           height: geo.size.width * 0.4)
+                    .frame(width: min(geo.size.width, geo.size.height * 2.5),
+                           height: min(geo.size.width, geo.size.height * 2.5) * 0.4)
                 ZStack {
                     Capsule().foregroundColor(.white)
                     SlalomingDot()
-                }.frame(width: geo.size.width * 0.95,
-                        height: geo.size.width * 0.36)
+                }.frame(width: min(geo.size.width, geo.size.height * 2.5) * 0.95,
+                        height: min(geo.size.width, geo.size.height * 2.5) * 0.36)
             }
+            .offset(x: (geo.size.width - min(geo.size.width, geo.size.height * 2.5)) / 2,
+                    y: (geo.size.height - min(geo.size.width, geo.size.height * 2.5) * 0.4) / 2)
         }
     }
 }

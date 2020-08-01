@@ -24,7 +24,7 @@ struct PulsingCapsules: View {
                 }
             }
             // Centers H and V in container
-            .offset(x: (geo.size.width - (CGFloat(numberOfCapsules) * widthForCapsuleIn(geo.size)))/2,
+            .offset(x: geo.size.width / 2 - ((CGFloat(numberOfCapsules) * 2 - 1) * widthForCapsuleIn(geo.size) / 2),
                 y: (geo.size.height/2) - (2*widthForCapsuleIn(geo.size)))
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
@@ -58,17 +58,11 @@ struct PulsingCapsules: View {
     }
     
     func widthForCapsuleIn(_ size: CGSize) -> CGFloat {
-        min(size.width / CGFloat(numberOfCapsules), size.height / 4)
+        min(size.width / CGFloat((numberOfCapsules * 2) - 1), size.height / 4)
     }
     
     func spacingBetweenCapsulesIn(_ size: CGSize) -> CGFloat {
-        0*(min(size.width, size.height) * 0.1) / CGFloat(numberOfCapsules)
+        widthForCapsuleIn(size)
     }
-    
-//    func offsetIn(_ size: CGSize) -> CGSize {
-//        let halfDotsWidth = min(size.width, size.height) / 2
-//        return CGSize(width: (size.width / 2) - halfDotsWidth,
-//               height: (size.height / 2) - (widthForCapsuleIn(size) / 2))
-//    }
 }
 

@@ -7,6 +7,7 @@
 
 
 # Activity indicators
+<img src="gif/activityIndicators.gif" width="250"/>
 
 # Check buttons
 <img src="gif/checkButtons.gif" width="250"/>

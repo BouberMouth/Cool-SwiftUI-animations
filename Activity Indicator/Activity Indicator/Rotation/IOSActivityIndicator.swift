@@ -11,7 +11,10 @@ struct IOSActivityIndicator: View {
     
     @State var indexOfHighlight: Int = 0
     
-    var opacities: [Double] = [1,11/12,10/12,9/12,8/12,7/12,6/12,5/12,4/12,3/12,2/12,1/12]
+    var opacities: [Double] = [1, 11/12, 10/12, 9/12, 8/12, 7/12,
+                               6/12, 5/12, 4/12, 3/12, 2/12, 1/12]
+    var clockwiseOpacities: [Double] = [1/12, 2/12, 3/12, 4/12, 5/12, 6/12,
+                                        7/12, 8/12, 9/12, 10/12, 11/12, 1]
     
     var body: some View {
         GeometryReader { geo in
@@ -21,15 +24,15 @@ struct IOSActivityIndicator: View {
                             height: heightForCapsuleIn(geo.size))
                     .offset(y: heightForCapsuleIn(geo.size) * 1.15)
                     .rotationEffect(angleForIndex(i))
-                    .opacity(opacities[(i + indexOfHighlight) % 12])
+                    .opacity(clockwiseOpacities[(i + indexOfHighlight) % 12])
                     .animation(.linear)
             }
             .offset(x: geo.size.width / 2 - widthForCapsuleIn(geo.size) / 2,
                      y: geo.size.height / 2 - heightForCapsuleIn(geo.size) / 2)
         }.onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
-                withAnimation(.linear(duration: 0.5)) {
-                    indexOfHighlight = (indexOfHighlight + 1) % 12
+            Timer.scheduledTimer(withTimeInterval: 1.5/12, repeats: true) { (_) in
+                withAnimation(.linear(duration: 1.5/12)) {
+                    indexOfHighlight += indexOfHighlight == 0 ? 11 : -1
                 }
             }
         }
@@ -51,7 +54,7 @@ struct IOSActivityIndicator: View {
 
 extension IOSActivityIndicator {
     @ViewBuilder
-    static func embededActivityIndicator() -> some View {
+    static func embeddedActivityIndicator() -> some View {
         GeometryReader { geo in
             ZStack {
                 Color(UIColor.darkGray)

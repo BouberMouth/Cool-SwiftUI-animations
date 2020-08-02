@@ -54,7 +54,7 @@ struct Dot: View {
                     .modifier(SlalomEffect(pct: self.flag ? 1 : 0,
                                      path: DotPath().path(in: CGRect(origin: .zero, size: geo.size))))
                     .onAppear {
-                        withAnimation(Animation.linear(duration: 4.0).repeatForever(autoreverses: false)) {
+                        withAnimation(Animation.linear(duration: 1.5).repeatForever(autoreverses: false)) {
                             self.flag.toggle()
                         }
                 }
@@ -127,14 +127,14 @@ struct DotPath: Shape {
 
 extension SlalomingDot {
     @ViewBuilder
-    static func embededSlalomingDot() -> some View {
+    static func embeddedSlalomingDot() -> some View {
         GeometryReader { geo in
             ZStack {
-                Capsule().foregroundColor(.black)
+                Capsule().foregroundColor(Color(UIColor.label))
                     .frame(width: min(geo.size.width, geo.size.height * 2.5),
                            height: min(geo.size.width, geo.size.height * 2.5) * 0.4)
                 ZStack {
-                    Capsule().foregroundColor(.white)
+                    Capsule().foregroundColor(Color(UIColor.systemBackground))
                     SlalomingDot()
                 }.frame(width: min(geo.size.width, geo.size.height * 2.5) * 0.95,
                         height: min(geo.size.width, geo.size.height * 2.5) * 0.36)

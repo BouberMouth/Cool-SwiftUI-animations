@@ -22,8 +22,8 @@ struct BouncingDots: View {
             }
             .offset(offsetIn(geo.size))
             .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (_) in
-                    withAnimation(.easeOut(duration: 0.4)) {
+                Timer.scheduledTimer(withTimeInterval: 1.5/4, repeats: true) { (_) in
+                    withAnimation(.easeOut(duration: 1.5/4)) {
                         indexOfAnimatedDot = (indexOfAnimatedDot + 1) % 4
                     }
                 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71A5260524D6C0D600D0B95D /* RotatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5260424D6C0D600D0B95D /* RotatingCircle.swift */; };
+		71A5260724D6CF3B00D0B95D /* PulsingLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5260624D6CF3B00D0B95D /* PulsingLine.swift */; };
 		71D06C5B24D572F60046AC50 /* Activity_IndicatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C5A24D572F60046AC50 /* Activity_IndicatorApp.swift */; };
 		71D06C5D24D572F60046AC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C5C24D572F60046AC50 /* ContentView.swift */; };
 		71D06C5F24D572FA0046AC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D06C5E24D572FA0046AC50 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71A5260424D6C0D600D0B95D /* RotatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircle.swift; sourceTree = "<group>"; };
+		71A5260624D6CF3B00D0B95D /* PulsingLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingLine.swift; sourceTree = "<group>"; };
 		71D06C5724D572F60046AC50 /* Activity Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Activity Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D06C5A24D572F60046AC50 /* Activity_IndicatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity_IndicatorApp.swift; sourceTree = "<group>"; };
 		71D06C5C24D572F60046AC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A5260824D6F70100D0B95D /* Pulse */ = {
+			isa = PBXGroup;
+			children = (
+				71A5260624D6CF3B00D0B95D /* PulsingLine.swift */,
+				71D06C6B24D590930046AC50 /* PulsingCapsules.swift */,
+			);
+			path = Pulse;
+			sourceTree = "<group>";
+		};
+		71A5260924D6F71600D0B95D /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				71A5260424D6C0D600D0B95D /* RotatingCircle.swift */,
+				71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */,
+				71D06C7124D61EC40046AC50 /* DottedCircle.swift */,
+			);
+			path = Rotation;
+			sourceTree = "<group>";
+		};
+		71A5260A24D6F72800D0B95D /* Dots */ = {
+			isa = PBXGroup;
+			children = (
+				71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */,
+				71D06C6924D573250046AC50 /* BouncingDots.swift */,
+			);
+			path = Dots;
+			sourceTree = "<group>";
+		};
 		71D06C4E24D572F60046AC50 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +96,9 @@
 			children = (
 				71D06C5A24D572F60046AC50 /* Activity_IndicatorApp.swift */,
 				71D06C5C24D572F60046AC50 /* ContentView.swift */,
-				71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */,
-				71D06C7124D61EC40046AC50 /* DottedCircle.swift */,
-				71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */,
-				71D06C6924D573250046AC50 /* BouncingDots.swift */,
-				71D06C6B24D590930046AC50 /* PulsingCapsules.swift */,
+				71A5260824D6F70100D0B95D /* Pulse */,
+				71A5260924D6F71600D0B95D /* Rotation */,
+				71A5260A24D6F72800D0B95D /* Dots */,
 				71D06C5E24D572FA0046AC50 /* Assets.xcassets */,
 				71D06C6324D572FA0046AC50 /* Info.plist */,
 				71D06C6024D572FA0046AC50 /* Preview Content */,
@@ -154,11 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D06C5D24D572F60046AC50 /* ContentView.swift in Sources */,
+				71A5260524D6C0D600D0B95D /* RotatingCircle.swift in Sources */,
 				71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */,
 				71D06C5B24D572F60046AC50 /* Activity_IndicatorApp.swift in Sources */,
 				71D06C6C24D590930046AC50 /* PulsingCapsules.swift in Sources */,
 				71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */,
 				71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */,
+				71A5260724D6CF3B00D0B95D /* PulsingLine.swift in Sources */,
 				71D06C6A24D573250046AC50 /* BouncingDots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

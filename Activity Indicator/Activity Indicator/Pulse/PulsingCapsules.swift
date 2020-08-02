@@ -27,13 +27,14 @@ struct PulsingCapsules: View {
             .offset(x: geo.size.width / 2 - ((CGFloat(numberOfCapsules) * 2 - 1) * widthForCapsuleIn(geo.size) / 2),
                 y: (geo.size.height/2) - (2*widthForCapsuleIn(geo.size)))
             .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
-                    withAnimation(.easeOut(duration: 0.1)) {
+                Timer.scheduledTimer(withTimeInterval: 1.5/Double(2*(numberOfCapsules-1)), repeats: true) { (_) in
+                    withAnimation(.easeOut(duration: 1.5/Double(2*numberOfCapsules))) {
                         if indexOfAnimatedCapsule == numberOfCapsules-1 {
                             decreasing = true
                         } else if indexOfAnimatedCapsule == 0 {
                             decreasing = false
                         }
+                        print(indexOfAnimatedCapsule)
                         
                         if !decreasing {
                             indexOfAnimatedCapsule = indexOfAnimatedCapsule + 1

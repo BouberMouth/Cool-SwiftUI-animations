@@ -9,9 +9,9 @@ import SwiftUI
 
 struct DottedCircle: View {
     
-    @State var indexOfHighlight: Int = 0
+    @State var indexOfHighlight: Int = 7
     
-    var scaleRatios: [CGFloat] = [1.2,1,0.8,0.6,0.6,0.6,0.6,0.6]
+    var scaleRatios: [CGFloat] = [1.2,1,0.8,0.6,0.6,0.6,0.6,0.6].reversed()
     
     var body: some View {
         GeometryReader { geo in
@@ -28,9 +28,10 @@ struct DottedCircle: View {
             .offset(x: geo.size.width / 2 - widthForCircleIn(geo.size) / 2,
                     y: geo.size.height / 2 - widthForCircleIn(geo.size) / 2)
         }.onAppear {
-            Timer.scheduledTimer(withTimeInterval: 1/8, repeats: true) { (_) in
-                withAnimation(.linear(duration: 1/8)) {
-                    indexOfHighlight = (indexOfHighlight + 1) % 8
+            Timer.scheduledTimer(withTimeInterval: 1.5/8, repeats: true) { (_) in
+                withAnimation(.linear(duration: 1.5/8)) {
+                    // Forcing the rotation to look like clockwise (with reversed array)
+                    indexOfHighlight += indexOfHighlight == 0 ? 7 : -1
                 }
             }
         }

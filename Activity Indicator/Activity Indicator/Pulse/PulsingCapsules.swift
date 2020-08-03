@@ -34,7 +34,6 @@ struct PulsingCapsules: View {
                         } else if indexOfAnimatedCapsule == 0 {
                             decreasing = false
                         }
-                        print(indexOfAnimatedCapsule)
                         
                         if !decreasing {
                             indexOfAnimatedCapsule = indexOfAnimatedCapsule + 1

@@ -11,14 +11,14 @@ struct RotatingCircle: View {
     
     @State var rotation: Double = 270
     
-    let conic = AngularGradient(gradient: Gradient(colors: [Color(.gray), Color(UIColor.gray.withAlphaComponent(0.1))]), center: .center, startAngle: .degrees(370), endAngle: .degrees(10))
-    
+    let angularGradient = AngularGradient(gradient: Gradient(colors: [Color(.gray), Color(UIColor.gray.withAlphaComponent(0.1))]), center: .center, startAngle: .degrees(370), endAngle: .degrees(10))
     
     var body: some View {
+        
         GeometryReader { geo in
             Circle()
                 .trim(from: 0.2, to: 1)
-                .stroke(conic, style: StrokeStyle(lineWidth: lineWidthIn(geo.size), lineCap: .round))
+                .stroke(angularGradient, style: StrokeStyle(lineWidth: lineWidthIn(geo.size), lineCap: .round))
                 .frame(width: widthForCircleIn(geo.size), height: widthForCircleIn(geo.size))
                 .rotationEffect(Angle(degrees: rotation))
                 .offset(offsetForCircleIn(geo.size))

@@ -1,4 +1,4 @@
-# CHECK BUTTONS
+# ACTIVITY INDICATORS
 
 # Contents
 

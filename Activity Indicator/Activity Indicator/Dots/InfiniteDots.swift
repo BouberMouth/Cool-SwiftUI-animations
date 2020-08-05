@@ -11,7 +11,7 @@ struct InfiniteDots: View {
     
     @State var indexOfHighlight: Int = 1
     
-    var opacities: [Double] = [1, 0.8, 0.6, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
+    var opacities: [Double] = [1, 0.5, 0.25, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
     
     var body: some View {
         GeometryReader { geo in
@@ -19,47 +19,41 @@ struct InfiniteDots: View {
                 ForEach(1..<8) { i in
 
                     Circle()
-                        .fill(Color.black)
+                        .fill()
                         .frame(width: widthForDotIn(geo.size), height: widthForDotIn(geo.size))
                         .offset(x: offsetForCircleIn(geo.size))
                         .rotationEffect(angleForIndex(i))
                         .opacity(opacityAtIndex(i))
                 }
 
-                ForEach(8..<9) { i in
-                    Circle()
-                        .fill(Color.black)
-                        .frame(width: widthForDotIn(geo.size), height: widthForDotIn(geo.size))
-                        .offset(x: offsetForCircleIn(geo.size) + widthForDotIn(geo.size) / 2)
-                        .opacity(max(opacityAtIndex(8), opacityAtIndex(16)))
-                }
+               
+                Circle()
+                    .fill()
+                    .frame(width: widthForDotIn(geo.size), height: widthForDotIn(geo.size))
+                    .offset(x: offsetForCircleIn(geo.size) + widthForDotIn(geo.size) / 2)
+                    .opacity(max(opacityAtIndex(8), opacityAtIndex(16)))
+                
                 
                 ForEach(9..<16) { i in
                         Circle()
-                            .fill(Color.black)
+                            .fill()
                             .frame(width: widthForDotIn(geo.size), height: widthForDotIn(geo.size))
                             .offset(x: offsetForCircleIn(geo.size))
                             .rotationEffect(angleForIndex(i))
                             .opacity(opacityAtIndex(i))
                 }.offset(x: offsetForCircleIn(geo.size) * 2 + widthForDotIn(geo.size))
             }
-            .offset(x: offsetForCircleIn(geo.size), y: 200)
-        }.onTapGesture {
-            withAnimation(.linear(duration: 0.3)) {
-                indexOfHighlight = indexOfHighlight + 1
-                if indexOfHighlight == 16 {
-                    indexOfHighlight = 1
-                }
-            }
+            .offset(x: offsetForCircleIn(geo.size) + (geo.size.width - 8 * widthForDotIn(geo.size)) / 2,
+                    y: offsetForCircleIn(geo.size) + (geo.size.height - 4 * widthForDotIn(geo.size)) / 2)
         }
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (_) in
-//                withAnimation(.linear(duration: 0.3)) {
-//                    indexOfHighlight = indexOfHighlight + 1
-//                    if indexOfHighlight == 16 {
-//                        indexOfHighlight = 1
-//                    }
-//                }
+            Timer.scheduledTimer(withTimeInterval: 1.5/16, repeats: true) { (_) in
+                withAnimation(.linear(duration: 1.5/16)) {
+                    indexOfHighlight = indexOfHighlight + 1
+                    if indexOfHighlight == 17 {
+                        indexOfHighlight = 1
+                    }
+                }
             }
         }
     }
@@ -83,7 +77,7 @@ struct InfiniteDots: View {
     }
     
     func opacityAtIndex(_ index: Int) -> Double {
-        opacities[abs(indexOfHighlight - index)%16]
+        opacities[(indexOfHighlight - index + 16)%16]
     }
 }
 

@@ -28,8 +28,8 @@ struct DottedCircle: View {
             .offset(x: geo.size.width / 2 - widthForCircleIn(geo.size) / 2,
                     y: geo.size.height / 2 - widthForCircleIn(geo.size) / 2)
         }.onAppear {
-            Timer.scheduledTimer(withTimeInterval: 1.5/8, repeats: true) { (_) in
-                withAnimation(.linear(duration: 1.5/8)) {
+            Timer.scheduledTimer(withTimeInterval: 1.5/8/2, repeats: true) { (_) in
+                withAnimation(.linear(duration: 1.5/8/2)) {
                     // Forcing the rotation to look like clockwise (with reversed array)
                     indexOfHighlight += indexOfHighlight == 0 ? 7 : -1
                 }

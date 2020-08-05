@@ -19,6 +19,7 @@
 		71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */; };
 		71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */; };
 		71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C7124D61EC40046AC50 /* DottedCircle.swift */; };
+		71DC0D5C24DAF2460029B6AF /* InfiniteDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlalomingDot.swift; sourceTree = "<group>"; };
 		71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSActivityIndicator.swift; sourceTree = "<group>"; };
 		71D06C7124D61EC40046AC50 /* DottedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedCircle.swift; sourceTree = "<group>"; };
+		71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */,
 				71C420FD24D8C1E300A2BAFC /* SwappingDots.swift */,
 				71D06C6924D573250046AC50 /* BouncingDots.swift */,
+				71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */,
 			);
 			path = Dots;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				71A5260524D6C0D600D0B95D /* RotatingCircle.swift in Sources */,
 				71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */,
 				71D06C5B24D572F60046AC50 /* Activity_IndicatorApp.swift in Sources */,
+				71DC0D5C24DAF2460029B6AF /* InfiniteDots.swift in Sources */,
 				71D06C6C24D590930046AC50 /* PulsingCapsules.swift in Sources */,
 				71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */,
 				71C420FE24D8C1E300A2BAFC /* SwappingDots.swift in Sources */,

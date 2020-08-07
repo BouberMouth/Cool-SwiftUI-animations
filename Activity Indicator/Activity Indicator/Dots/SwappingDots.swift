@@ -26,9 +26,6 @@ struct SwappingDots: View {
             }
             .offset(offsetIn(geo.size))
             .onAppear {
-                print(geo.size)
-                print(widthForDotIn(geo.size))
-                print(spacingBetweenDotsIn(geo.size))
                 Timer.scheduledTimer(withTimeInterval: Double(animationDuration) * 1.2, repeats: true) { (_) in
 
                     DispatchQueue.main.async {

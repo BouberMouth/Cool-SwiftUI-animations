@@ -14,43 +14,46 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Spacer()
             HStack {
                 SwappingDots()
-                    .padding(.horizontal, 30)
                     .foregroundColor(Color(.darkGray))
                     .aspectRatio(1, contentMode: .fit)
-                BouncingDots()
-                    .padding(.horizontal, 30)
-                    .foregroundColor(Color(.darkGray))
-                    .aspectRatio(1, contentMode: .fit)
-                SlalomingDot.embeddedSlalomingDot()
                     .padding()
+                BouncingDots()
+                    .foregroundColor(Color(.darkGray))
                     .aspectRatio(1, contentMode: .fit)
+                    .padding()
+                SlalomingDot.embeddedSlalomingDot()
+                    .aspectRatio(1, contentMode: .fit)
+                    .padding()
             }
-            Spacer()
+
             HStack {
                 IOSActivityIndicator.embeddedActivityIndicator()
-                    .padding()
                     .aspectRatio(1, contentMode: .fit)
-                DottedCircle()
                     .padding()
+                DottedCircle()
                     .foregroundColor(Color(.darkGray))
                     .aspectRatio(1, contentMode: .fit)
+                    .padding()
                 RotatingCircle()
-                    .padding(.horizontal, 20)
                     .aspectRatio(1, contentMode: .fit)
+                    .padding()
             }
-            Spacer()
             HStack {
                 PulsingCapsules(numberOfCapsules: 15)
-                    .padding()
                     .aspectRatio(1, contentMode: .fit)
+                    .padding()
                 PulsingLine()
                     .aspectRatio(1, contentMode: .fit)
+                    .padding()
                 InfiniteDots()
                     .aspectRatio(1, contentMode: .fit)
                     .opacity(0.8)
+                    .padding()
             }
+            Spacer()
         }.padding()
     }
 }

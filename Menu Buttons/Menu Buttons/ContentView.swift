@@ -12,13 +12,17 @@ struct ContentView: View {
     @State var showMenu: Bool = false
     
     var body: some View {
-        LottieMenuButton(showBackButton: $showMenu)
-            .frame(width: 30, height: 30)
-            .clipped()
-            .animation(.linear)
-            .onTapGesture {
-                showMenu.toggle()
-            }
+        VStack {
+            
+            
+            LottieMenuButton(showBackButton: $showMenu)
+                .frame(width: 40, height: 40)
+                .clipped()
+                .animation(.linear)
+                .onTapGesture {
+                    showMenu.toggle()
+                }
+        }
     }
 }
 

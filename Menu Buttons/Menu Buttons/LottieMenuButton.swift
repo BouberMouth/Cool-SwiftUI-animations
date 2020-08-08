@@ -36,7 +36,7 @@ struct LottieMenuButton: View {
                 
             }
             .offset(y: (heightForCapsuleIn(geo.size) + yOffsetForRectangleIn(geo.size)) + (geo.size.height - (3 * heightForCapsuleIn(geo.size) + 2 * yOffsetForRectangleIn(geo.size))) / 2)
-        }
+        }.scaleEffect(x: 0.9, y: 0.9, anchor: .center)
     }
     
     func heightForCapsuleIn(_ size: CGSize) -> CGFloat {
@@ -62,7 +62,7 @@ struct LottieMenuButton: View {
     func offsetForCapsule1In(_ size: CGSize) -> CGSize {
         let width = min(size.width, size.height)
         if showBackButton {
-            return CGSize(width: -width * 0.21, height: width * 0.21)
+            return CGSize(width: -width * 0.216, height: width * 0.21)
         }
         return CGSize(width: 0, height: -width * 0.33)
     }
@@ -70,7 +70,7 @@ struct LottieMenuButton: View {
     func offsetForCapsule3In(_ size: CGSize) -> CGSize {
         let width = min(size.width, size.height)
         if showBackButton {
-            return CGSize(width: -width * 0.21, height: -width * 0.21)
+            return CGSize(width: -width * 0.216, height: -width * 0.21)
         }
         return CGSize(width: 0, height: width * 0.33)
     }

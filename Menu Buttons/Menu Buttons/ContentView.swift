@@ -16,7 +16,8 @@ struct ContentView: View {
             
             
             LottieMenuButton(showBackButton: $showMenu)
-                .frame(width: 40, height: 40)
+                .background(Color.red)
+                .aspectRatio(1/3, contentMode: .fit)
                 .clipped()
                 .animation(.linear)
                 .onTapGesture {

@@ -35,7 +35,9 @@ struct LottieMenuButton: View {
                 
                 
             }
-            .offset(y: (heightForCapsuleIn(geo.size) + yOffsetForRectangleIn(geo.size)) + (geo.size.height - (3 * heightForCapsuleIn(geo.size) + 2 * yOffsetForRectangleIn(geo.size))) / 2)
+            .offset(
+                x: (geo.size.width - widthForCapsule2In(geo.size)) / 2,
+                y: (heightForCapsuleIn(geo.size) + yOffsetForRectangleIn(geo.size)) + (geo.size.height - (3 * heightForCapsuleIn(geo.size) + 2 * yOffsetForRectangleIn(geo.size))) / 2)
         }.scaleEffect(x: 0.9, y: 0.9, anchor: .center)
     }
     

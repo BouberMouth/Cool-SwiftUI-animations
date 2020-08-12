@@ -12,6 +12,7 @@
 		71E8032524DDC15D00B51774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E8032424DDC15D00B51774 /* Assets.xcassets */; };
 		71E8032824DDC15D00B51774 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E8032724DDC15D00B51774 /* Preview Assets.xcassets */; };
 		71E8033024DDC19B00B51774 /* LottieMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8032F24DDC19B00B51774 /* LottieMenuButton.swift */; };
+		71F6C96024E401AE00EAB375 /* SoftLottieMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6C95F24E401AE00EAB375 /* SoftLottieMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		71E8032724DDC15D00B51774 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71E8032924DDC15D00B51774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E8032F24DDC19B00B51774 /* LottieMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieMenuButton.swift; sourceTree = "<group>"; };
+		71F6C95F24E401AE00EAB375 /* SoftLottieMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftLottieMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				71E8032024DDC15900B51774 /* Menu_ButtonsApp.swift */,
 				71E8032224DDC15900B51774 /* ContentView.swift */,
 				71E8032F24DDC19B00B51774 /* LottieMenuButton.swift */,
+				71F6C95F24E401AE00EAB375 /* SoftLottieMenuButton.swift */,
 				71E8032424DDC15D00B51774 /* Assets.xcassets */,
 				71E8032924DDC15D00B51774 /* Info.plist */,
 				71E8032624DDC15D00B51774 /* Preview Content */,
@@ -144,6 +147,7 @@
 				71E8032324DDC15900B51774 /* ContentView.swift in Sources */,
 				71E8032124DDC15900B51774 /* Menu_ButtonsApp.swift in Sources */,
 				71E8033024DDC19B00B51774 /* LottieMenuButton.swift in Sources */,
+				71F6C96024E401AE00EAB375 /* SoftLottieMenuButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

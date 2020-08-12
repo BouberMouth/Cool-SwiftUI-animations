@@ -14,16 +14,20 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            
             LottieMenuButton(showBackButton: $showMenu)
-                .background(Color.red)
-                .aspectRatio(1/3, contentMode: .fit)
-                .clipped()
                 .animation(.linear)
                 .onTapGesture {
                     showMenu.toggle()
                 }
-        }
+            
+            
+            SoftLottieMenuButton(showBackButton: $showMenu)
+                .animation(.linear)
+                .onTapGesture {
+                    showMenu.toggle()
+                }
+        }.frame(width: 50)
+        .foregroundColor(.blue)
     }
 }
 

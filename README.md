@@ -3,6 +3,7 @@
 - [Check buttons](#check-buttons)
 - [Clock](#clock)
 - [Digital clock](#digital-clock)
+- [Menu buttons](#menu-buttons)
 - [Rotating picker](#rotating-picker)
 
 
@@ -17,6 +18,8 @@
 
 # Digital clock
 <img src="gif/digitalClock.gif" width="250"/>
+
+# Menu buttons
 
 # Rotating picker
 <img src="gif/rotatingPicker.gif" width="250"/>

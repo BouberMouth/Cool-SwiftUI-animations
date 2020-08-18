@@ -12,24 +12,65 @@ struct ContentView: View {
     @State var showMenu: Bool = false
     
     var body: some View {
-        VStack {
+        HStack {
+            VStack {
+                LottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.blue)
+                LottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.green)
+                LottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.yellow)
+                LottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.red)
+            }
             
-            LottieMenuButton(showBackButton: $showMenu)
-                .animation(.linear)
-                .onTapGesture {
-                    showMenu.toggle()
-                }
-            
-            
-            SoftLottieMenuButton(showBackButton: $showMenu)
-                .animation(.linear)
-                .onTapGesture {
-                    showMenu.toggle()
-                }
-        }.frame(width: 50)
-        .foregroundColor(.blue)
+            VStack {
+                SoftLottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.blue)
+                SoftLottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.green)
+                SoftLottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.yellow)
+                SoftLottieMenuButton(showBackButton: $showMenu)
+                    .animation(.linear)
+                    .onTapGesture {
+                        showMenu.toggle()
+                    }
+                    .foregroundColor(.red)
+            }
+        }
+        
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

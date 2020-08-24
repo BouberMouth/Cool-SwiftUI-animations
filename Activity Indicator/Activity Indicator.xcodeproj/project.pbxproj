@@ -20,6 +20,7 @@
 		71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */; };
 		71D06C7224D61EC40046AC50 /* DottedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06C7124D61EC40046AC50 /* DottedCircle.swift */; };
 		71DC0D5C24DAF2460029B6AF /* InfiniteDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */; };
+		71F6C98124F3F4B300EAB375 /* UnamedDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6C98024F3F4B300EAB375 /* UnamedDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		71D06C6F24D5E65C0046AC50 /* IOSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSActivityIndicator.swift; sourceTree = "<group>"; };
 		71D06C7124D61EC40046AC50 /* DottedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedCircle.swift; sourceTree = "<group>"; };
 		71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteDots.swift; sourceTree = "<group>"; };
+		71F6C98024F3F4B300EAB375 /* UnamedDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnamedDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				71D06C6D24D5A1040046AC50 /* SlalomingDot.swift */,
 				71C420FD24D8C1E300A2BAFC /* SwappingDots.swift */,
 				71D06C6924D573250046AC50 /* BouncingDots.swift */,
+				71F6C98024F3F4B300EAB375 /* UnamedDots.swift */,
 				71DC0D5B24DAF2460029B6AF /* InfiniteDots.swift */,
 			);
 			path = Dots;
@@ -197,6 +200,7 @@
 				71D06C6C24D590930046AC50 /* PulsingCapsules.swift in Sources */,
 				71D06C6E24D5A1040046AC50 /* SlalomingDot.swift in Sources */,
 				71C420FE24D8C1E300A2BAFC /* SwappingDots.swift in Sources */,
+				71F6C98124F3F4B300EAB375 /* UnamedDots.swift in Sources */,
 				71D06C7024D5E65C0046AC50 /* IOSActivityIndicator.swift in Sources */,
 				71A5260724D6CF3B00D0B95D /* PulsingLine.swift in Sources */,
 				71D06C6A24D573250046AC50 /* BouncingDots.swift in Sources */,

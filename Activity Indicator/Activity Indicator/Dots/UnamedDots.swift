@@ -18,15 +18,20 @@ struct UnamedDots: View {
                 HStack(spacing: spacingBetweenDotsIn(geo.size)) {
                     ForEach(0..<3) { i in
                         Circle().fill()
-                            .frame(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
-                                   height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0)
+//                            .frame(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
+//                                   height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0)
+                            .frame(width: 1, height: 1)
+                            .scaleEffect(CGSize(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
+                                                height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0),
+                                         anchor: .center)
+                            
                             .offset(y: indexOfAnimatedDot == i ? -widthForDotIn(geo.size)/2 : 0)
                     }
                 }
                 .offset(offsetIn(geo.size))
                 .onAppear {
                     Timer.scheduledTimer(withTimeInterval: 1.5/4, repeats: true) { (_) in
-                        withAnimation(.easeOut(duration: 1.5/4)) {
+                        withAnimation(.easeOut(duration: 1.5/4 * 3)) {
                             indexOfAnimatedDot = (indexOfAnimatedDot + 1) % 4
                         }
                     }

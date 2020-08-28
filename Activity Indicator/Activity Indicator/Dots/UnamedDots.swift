@@ -15,20 +15,15 @@ struct UnamedDots: View {
         GeometryReader { geo in
             ZStack {
                 Rectangle().opacity(0)
-                HStack(spacing: spacingBetweenDotsIn(geo.size)) {
+                ZStack() {
                     ForEach(0..<3) { i in
                         Circle().fill()
-//                            .frame(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
-//                                   height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0)
-                            .frame(width: 1, height: 1)
-                            .scaleEffect(CGSize(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
-                                                height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0),
-                                         anchor: .center)
-                            
-                            .offset(y: indexOfAnimatedDot == i ? -widthForDotIn(geo.size)/2 : 0)
+                            .frame(width: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0,
+                                    height: indexOfAnimatedDot == i ? widthForDotIn(geo.size) : 0)
+                            .offset(offsetForDotAtindex(i, in: geo.size))
                     }
                 }
-                .offset(offsetIn(geo.size))
+                //.offset(offsetIn(geo.size))
                 .onAppear {
                     Timer.scheduledTimer(withTimeInterval: 1.5/4, repeats: true) { (_) in
                         withAnimation(.easeOut(duration: 1.5/4 * 3)) {
@@ -41,11 +36,26 @@ struct UnamedDots: View {
     }
     
     func widthForDotIn(_ size: CGSize) -> CGFloat {
-        min(size.width * 0.3, size.height / 1.5)
+        print(size)
+        print(min(size.width * 0.3, size.height / 1.5))
+        return min(size.width * 0.3, size.height / 1.5)
+        
     }
     
     func spacingBetweenDotsIn(_ size: CGSize) -> CGFloat {
         min(size.width, size.height) * 0.05
+    }
+    
+    func offsetForDotAtindex(_ index: Int, in size: CGSize) -> CGSize {
+        if index == 1 {
+            return CGSize.zero
+        } else if index == 2 {
+            return CGSize(width: widthForDotIn(size) + spacingBetweenDotsIn(size),
+                   height: 0)
+        } else {
+            return CGSize(width: -widthForDotIn(size) - spacingBetweenDotsIn(size),
+                   height: 0)
+        }
     }
     
     func offsetIn(_ size: CGSize) -> CGSize {

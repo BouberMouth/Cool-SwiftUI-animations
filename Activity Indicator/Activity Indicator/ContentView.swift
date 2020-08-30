@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        UnamedDots().frame(height: 50)
+        UnamedDots().frame(height: 50).foregroundColor(.gray)
 //
 //        VStack {
 //            Spacer()

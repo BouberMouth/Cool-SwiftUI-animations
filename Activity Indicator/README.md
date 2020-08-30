@@ -8,6 +8,7 @@
     - [Slaloming dot](#slaloming-dot)
     - [Dotted circle](#dotted-circle)
     - [Infinite dots](#infinite-dots)
+    - [Unamed dots](#unamed-dots)
 - Rotating
     - [iOS activity indicator](#ios-activity-indicator)
     - [Rotating circle](#rotating-circle)
@@ -29,6 +30,9 @@
 
 # Infinite dots
 <img src="gif/infiniteDots.gif" width="250"/>
+
+# Unamed dots
+<img src="gif/unamedDots.gif" width="250"/>
 
 # iOS activity indicator
 <img src="gif/iOSActivityIndicator.gif" width="250"/>

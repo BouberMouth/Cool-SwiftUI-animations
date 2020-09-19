@@ -26,3 +26,10 @@
 <p>Inspired by <a href="https://www.instagram.com/innappscoding/">InnAppsCoding</a>'s <a href="https://www.instagram.com/p/CAm_qd1ALbE/?igshid=hhqkv5q8yplk">rotating picker.</p>
 
 
+# FUTURE ANIMATIONS
+- Like buttons
+  - Twitter
+  - Facebook
+  - Instagram
+  - #AppleEvent like button
+  

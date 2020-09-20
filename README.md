@@ -33,3 +33,9 @@
   - Instagram
   - #AppleEvent like button
   
+ - Menu buttons
+  - Burger to Back arrow
+
+- Connection indicators
+  - Wifi
+  

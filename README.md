@@ -38,4 +38,5 @@
 
 - Connection indicators
   - Wifi
+  - Bluetooth
   
